@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
+    <title>Yoko Ambientaciones</title>
+</head>
+
+<body>
+
+    <nav class="menu">
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="conocenos.html">Conocenos</a></li>
+            <li><a href="boda-cump.html">Bodas & Cumpleaños</a></li>
+            <li><a href="eventos.html">Eventos sociales</a></li>
+            <li><a href="contacto.html">Contactanos</a></li>
+        </ul>
+
+    </nav>
+    
+    <header class="portada">
+        
+
+        <div>
+            
+            <h1 class="portada__titular__sec">Contactanos</h1>
+        
+        </div>
+    
+    </header>
+    
+   
+    <main class="portada__mainFondo--contacto">
+        
+        <form action="" class="main__form">
+        
+            <fieldset class="main__form__cuadro">
+          
+                <legend>Formulario de contacto</legend>
+
+
+                    <label for="nombre" class="main__form__label">Nombre:</label>
+
+                    <input type="text" name="nombre" placeholder="Ingrese su nombre" required class="main__form__input">
+                
+
+                    <label for="apellido">Apellido:</label>
+
+                    <input type="text" name="apellido" placeholder="Ingrese su apellido" required class="main__form__input">
+
+                
+                    <label for="tipo">Evento</label>
+    
+                    <select name="tipo" class="main__form__sel">
+                
+                        <option value="bod">Boda</option>
+                
+                        <option value="cump">Cumpleaños</option>
+                
+                        <option value="eve">Evento social</option>
+                    </select>
+
+                
+                    <label for="cel">Teléfono:</label>
+                
+                    <input type="tel" name="cel" placeholder="11-1234-5678" class="main__form__input">
+
+                
+                    <label for="mail">Email:</label>
+                
+                    <input type="email" name="mail" placeholder="nombre@ejemplo.com" class="main__form__input">
+
+                
+                    <label for="comentarios">Queres dejarnos algun comentario:</label>                
+                
+                    <textarea name="comentarios" id="" cols="30" rows="10" placeholder="Comentarios" class="main__form__coment"></textarea>
+            
+                
+                    <input type="submit" value="Enviar" class="main__form__texto--boton">
+            
+            </fieldset>
+
+        </form>
+    
+    </main>
+
+
+  <!-- redes sociales -->
+    <footer class="pie"> 
+
+        <div>
+
+            <img src="./recursos/icons/facebook.png" alt="Facebook" usemap="#face" class="pie__icono--face">
+            
+                <map name="face">
+            
+                <area shape="rect" coords="0, 0, 50, 50" href="https://www.facebook.com/" alt="Facebook" target="_blank">
+                
+                </map>
+  
+        
+            <img src="./recursos/icons/instagram.png" alt="Instagram" usemap="#insta" class="pie__icono--insta">
+        
+                <map name="insta">
+        
+                <area shape="rect" coords="0, 0, 50, 50" href="https://www.instagram.com/" alt="Instagram" target="_blank">
+        
+                </map>
+
+        </div>
+
+    </footer>
+
+
+</body>
+</html>

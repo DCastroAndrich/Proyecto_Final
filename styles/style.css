@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+/* Estilos comunes a todas las paginas */
+
+.portada {
+    background-image: url(../recursos/fondo/pexels-camille-stae-2293507.jpg);
+    
+}
+
+.portada__mainFondo {
+    background-image: url(../recursos/fondo/dark-honeycomb.png);
+    padding-bottom: 20px;
+}
+
+.portada__titular {
+    font-family: 'Sanchez', serif;
+    color: white;
+    text-align: center;
+    font-size: 127px;
+    padding: 172px;
+}
+
+.portada__titular__sec {
+    font-family: 'Sanchez', serif;
+    text-align: center;
+    color: white;
+    font-size: 90px;
+    padding-bottom: 30px;
+}
+
+
+.portada__texto__principal {
+    color: whitesmoke;
+    font-family: 'Sanchez', serif;
+    text-align: center;
+    font-size: 13px;
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.menu ul {
+    background-image: linear-gradient(to right bottom, #1c1c1c, #181818, #141414, #0f0f0f, #090909, #090909, #090909, #090909, #0f0f0f, #141414, #181818, #1c1c1c);
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+      
+       
+}
+
+
+
+.menu ul li a {
+    font-family: 'Sanchez', serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: whitesmoke;
+    
+}
+
+
+
+.main__titular {
+    font-family: 'Sanchez', serif;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+
+.pie {
+    background-image: linear-gradient(to right bottom, #1c1c1c, #181818, #141414, #0f0f0f, #090909, #090909, #090909, #090909, #0f0f0f, #141414, #181818, #1c1c1c);
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: flex-end;
+    
+    }
+
+.pie__icono--face {
+    width: 40px;
+    height: auto;
+    transform: translateX(-15px);
+}
+
+.pie__icono--insta {
+    width: 40px;
+    height: auto;
+
+}
+
+
+/* HOME */
+ 
+.portada__imagen--boda {
+    margin: 30px 0 30px 30px;
+    
+}
+
+
+.portada__imagen--event {
+    margin: 30px 0 30px 30px;
+}
+
+.portada__imagen--cumple {
+    margin: 30px 0 30px 30px;
+}
+
+/* CONOCENOS */
+
+.main__imagen--boda {
+    width: 500px;
+    height: auto;
+    margin-left: 170px;
+    margin-top: 30px;
+        
+}
+
+
+
+.main__imagen--cumple {
+    width: 500px;
+    height: 333px;
+    margin-left: -10px;
+}
+
+
+.main__imagen--event {
+    width: 800px;
+    height: auto;
+    margin-left: 275px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* BODAS Y CUMPLEAÑOS */
+
+
+.main__texto__secundario {
+    color: whitesmoke;
+    font-family: 'Sanchez', serif;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+#flex1 {
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main__boda__imagen1 {
+    width: 345px;
+    height: auto;
+    border: 5px solid black;
+    transition:  2s;
+    
+}
+
+
+.main__boda__imagen2 {
+    width: 319px;
+    height: auto;
+    border: 5px solid black;
+    transition: all 2s;
+    
+}
+
+.main__boda__imagen3 {
+    width: 319px;
+    height: auto;
+    border: 5px solid black;
+    transition: all 2s;
+}
+
+.main__boda__imagen4 {
+    width: 336px;
+    height: auto;
+    border: 5px solid black;
+    transition: all 2s;
+}
+
+.main__boda__imagen1:hover, .main__boda__imagen2:hover, .main__boda__imagen3:hover, .main__boda__imagen4:hover {
+    width: 500px;
+    height: auto;
+    
+}
+
+
+#grid2 {
+    padding-top: 20px;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: 100px 600px 600px 100px;
+    grid-template-areas: 
+                ".... imagen1 imagen2 ...."
+                ".... imagen3 imagen3 ....";
+    justify-content: center;
+    
+}
+
+
+.main__cumple__imagen1 {
+    grid-area: imagen1;
+    width: 600px;
+    height: auto;
+  
+}
+
+.main__cumple__imagen2 {
+    grid-area: imagen2;
+    width: 600px;
+    height: auto;
+   
+} 
+
+.main__cumple__imagen3 {
+    grid-area: imagen3;
+    width: 1210px;
+    height: auto;
+    
+} 
+
+
+
+/* EVENTOS */
+
+
+#eventosFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 2000px;
+    
+}
+
+.eventosFlex__cont {
+    border-radius: 2%;
+    border: 2px solid black;
+    margin: 10px;
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.eventosFlex__imagen {
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s;
+}
+
+.eventosFlex__cont:hover img {
+    filter: blur(2px);
+    transform: scale(1.1);
+    transition: all 0.4s;
+}
+
+.eventosFlex__cont::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 0.4s;
+}
+
+.eventosFlex__cont:hover:before {
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    transition: all 0.4s;
+}
+
+.eventosFlex__textos {
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    font-family: 'Sanchez', serif;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    
+}
+
+.eventosFlex__titulo, .eventosFlex__parrafo {
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.eventosFlex__titulo {
+    position: relative;
+    bottom: 100%;
+
+}
+
+.eventosFlex__cont:hover .eventosFlex__titulo {
+    bottom: 0;
+    transition: all 0.5s;
+}
+
+.eventosFlex__parrafo {
+    position: relative;
+    top: 100%;
+}
+
+.eventosFlex__cont:hover .eventosFlex__parrafo {
+    top: 0;
+    transition: all 0.5s;
+}
+
+
+/* CONTACTANOS */
+
+.portada__mainFondo--contacto {
+    background-image: url(../recursos/fondo/pexels-tejas-prajapati-586744.jpg);
+    top: 0;
+    left: 0;
+    background-size: 100%;
+    background-position: center;
+    
+
+
+}
+
+.main__form {
+    color: gold;
+    font-family: 'Sanchez', serif;
+    font-weight: bold;
+    
+}
+
+.main__form__cuadro {
+    margin: 0 400px 0 400px;
+    background-color: rgba(128, 128, 128, 0.4);
+           
+}
+
+
+.main__form__label {
+    display: block;
+    margin-top: 30px;
+}
+
+.main__form__input {
+    width: 150px;
+    display: block;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    font-family: 'Sanchez', serif;
+    background-color: black;
+    opacity: 0.8;
+}
+
+
+.main__form__sel {
+    color: whitesmoke;
+    font-family: 'Sanchez', serif;
+    display: block;
+    margin: 0 0 10px 60px;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.main__form__coment {
+    color: whitesmoke;
+    font-family: 'Sanchez', serif;
+    display: block;
+    margin-left: 112px;
+    width: 330px;
+    height: 210px;
+    background-color: black;
+    opacity: 0.8;
+    resize: none;
+    
+}
+
+.main__form__texto--boton {
+    color: whitesmoke;
+    background-color: rgba(29, 29, 29, 0.89);
+    font-family: 'Sanchez', serif;
+    width: 75px;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 230px;
+    margin-bottom: 30px;
+    
+}
+
+.main__form__texto--boton:hover {
+    color: whitesmoke;
+    background-color: rgba(29, 29, 29, 0.89);
+    box-shadow: 2px 2px 10px 5px gold;
+    
+}
