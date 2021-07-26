@@ -1,0 +1,436 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+}
+
+/* Navbar */
+.menu {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  height: 50px;
+}
+
+.menu ul {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#1c1c1c), color-stop(#181818), color-stop(#141414), color-stop(#0f0f0f), color-stop(#090909), color-stop(#090909), color-stop(#090909), color-stop(#090909), color-stop(#0f0f0f), color-stop(#141414), color-stop(#181818), to(#1c1c1c));
+  background-image: linear-gradient(to right bottom, #1c1c1c, #181818, #141414, #0f0f0f, #090909, #090909, #090909, #090909, #0f0f0f, #141414, #181818, #1c1c1c);
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.menu ul li a {
+  font-family: 'Sanchez', serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+/* Header */
+.portada {
+  background-image: url(../recursos/fondo/pexels-camille-stae-2293507.jpg);
+}
+
+.portada__titular {
+  font-family: 'Sanchez', serif;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+  font-size: 127px;
+  padding: 172px;
+}
+
+.portada__titular__sec {
+  font-family: 'Sanchez', serif;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+  color: white;
+  font-size: 9vw;
+  padding-bottom: 30px;
+  margin-bottom: 0;
+}
+
+/* Main */
+.portada__mainFondo {
+  background-image: url(../recursos/fondo/dark-honeycomb.png);
+  padding-bottom: 20px;
+}
+
+.portada__texto__principal {
+  color: whitesmoke;
+  font-family: 'Sanchez', serif;
+  text-align: center;
+  font-size: 13px;
+}
+
+.main__titular {
+  font-family: 'Sanchez', serif;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+
+.main__texto__secundario {
+  color: whitesmoke;
+  font-family: 'Sanchez', serif;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* Footer */
+.pie {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#1c1c1c), color-stop(#181818), color-stop(#141414), color-stop(#0f0f0f), color-stop(#090909), color-stop(#090909), color-stop(#090909), color-stop(#090909), color-stop(#0f0f0f), color-stop(#141414), color-stop(#181818), to(#1c1c1c));
+  background-image: linear-gradient(to right bottom, #1c1c1c, #181818, #141414, #0f0f0f, #090909, #090909, #090909, #090909, #0f0f0f, #141414, #181818, #1c1c1c);
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.pie__icono--face {
+  width: 40px;
+  height: auto;
+  -webkit-transform: translateX(-15px);
+          transform: translateX(-15px);
+}
+
+.pie__icono--insta {
+  width: 40px;
+  height: auto;
+}
+
+/* HOME */
+.portada__home {
+  background-image: url(../recursos/fondo/pexels-camille-stae-2293507.jpg);
+  height: 100vh;
+}
+
+#portada__imagen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 30px;
+}
+
+.portada__imagen--img {
+  margin: 30px auto;
+  width: 80vw;
+  height: auto;
+}
+
+/* CONOCENOS */
+#conocenosFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px;
+}
+
+.main__imagen--boda {
+  width: 35vw;
+  height: 60vh;
+}
+
+.main__imagen--cumple {
+  width: 35vw;
+  height: 60vh;
+}
+
+.main__imagen--event {
+  display: block;
+  width: 80vw;
+  height: auto;
+  margin: 30px auto;
+}
+
+/* BODAS Y CUMPLEAÑOS */
+#flex1 {
+  width: 100vw;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__boda__imagen1 {
+  width: 345px;
+  height: auto;
+  border: 5px solid black;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.main__boda__imagen1:hover {
+  width: 500px;
+  height: auto;
+}
+
+.main__boda__imagen2 {
+  width: 319px;
+  height: auto;
+  border: 5px solid black;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.main__boda__imagen2:hover {
+  width: 500px;
+  height: auto;
+}
+
+.main__boda__imagen3 {
+  width: 319px;
+  height: auto;
+  border: 5px solid black;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.main__boda__imagen3:hover {
+  width: 500px;
+  height: auto;
+}
+
+.main__boda__imagen4 {
+  width: 336px;
+  height: auto;
+  border: 5px solid black;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.main__boda__imagen4:hover {
+  width: 500px;
+  height: auto;
+}
+
+#grid2 {
+  width: 100vw;
+  padding-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 10px;
+  -ms-grid-columns: 100px 600px 600px 100px;
+      grid-template-columns: 100px 600px 600px 100px;
+      grid-template-areas: ".... imagen1 imagen2 ...." ".... imagen3 imagen3 ....";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__cumple__imagen1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: imagen1;
+  width: 600px;
+  height: auto;
+}
+
+.main__cumple__imagen2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: imagen2;
+  width: 600px;
+  height: auto;
+}
+
+.main__cumple__imagen3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: imagen3;
+  width: 1210px;
+  height: auto;
+}
+
+/* EVENTOS */
+#eventosFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 2000px;
+}
+
+.eventosFlex__cont {
+  border-radius: 2%;
+  border: 2px solid black;
+  margin: 10px;
+  width: 60%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.eventosFlex__cont:hover img {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.eventosFlex__cont::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.eventosFlex__cont:hover:before {
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.eventosFlex__imagen {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.eventosFlex__textos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: whitesmoke;
+  font-family: 'Sanchez', serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.eventosFlex__titulo.eventosFlex__parrafo {
+  margin: 10px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.eventosFlex__titulo {
+  position: relative;
+  bottom: 100%;
+}
+
+.eventosFlex__cont:hover .eventosFlex__titulo {
+  bottom: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.eventosFlex__parrafo {
+  position: relative;
+  top: 100%;
+}
+
+.eventosFlex__cont:hover .eventosFlex__parrafo {
+  top: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* CONTACTO */
+.portada__mainFondo--contacto {
+  background-image: url(../recursos/fondo/pexels-tejas-prajapati-586744.jpg);
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-size: 100%;
+  background-position: center;
+}
+
+.formulario {
+  font-family: 'Sanchez', serif;
+  color: whitesmoke;
+  width: 50vw;
+  margin-left: 25%;
+}
+
+.formulario__main {
+  padding-top: 30px;
+}
+
+.btn-dark:hover {
+  color: whitesmoke;
+  background-color: rgba(29, 29, 29, 0.89);
+  -webkit-box-shadow: 2px 2px 10px 5px gold;
+          box-shadow: 2px 2px 10px 5px gold;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,22 @@
+/* Footer */
+.pie {
+    background-image: linear-gradient(to right bottom, #1c1c1c, #181818, #141414, #0f0f0f, #090909, #090909, #090909, #090909, #0f0f0f, #141414, #181818, #1c1c1c);
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: flex-end;
+    
+    }
+
+.pie__icono--face {
+    width: 40px;
+    height: auto;
+    transform: translateX(-15px);
+}
+
+.pie__icono--insta {
+    width: 40px;
+    height: auto;
+
+}

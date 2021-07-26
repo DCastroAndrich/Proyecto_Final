@@ -1,0 +1,22 @@
+/* Navbar */
+.menu {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    height: 50px;
+    ul {
+        background-image: linear-gradient(to right bottom, #1c1c1c, #181818, #141414, #0f0f0f, #090909, #090909, #090909, #090909, #0f0f0f, #141414, #181818, #1c1c1c);
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        li {
+            a {
+                font-family: 'Sanchez', serif;
+                font-weight: bold;
+                text-decoration: none;
+                color: whitesmoke;
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+/* Header */
+.portada {
+    background-image: url(../recursos/fondo/pexels-camille-stae-2293507.jpg);
+}
+
+.portada__titular {
+    font-family: 'Sanchez', serif;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    font-size: 127px;
+    padding: 172px;
+}
+
+.portada__titular__sec {
+    font-family: 'Sanchez', serif;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    font-size: 9vw;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+}

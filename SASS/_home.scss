@@ -1,0 +1,21 @@
+/* HOME */
+
+.portada__home {
+    background-image: url(../recursos/fondo/pexels-camille-stae-2293507.jpg);
+    height: 100vh;
+    
+}
+
+#portada__imagen {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+
+}
+ 
+.portada__imagen--img {
+    margin: 30px auto;
+    width: 80vw;
+    height: auto;
+    
+} 

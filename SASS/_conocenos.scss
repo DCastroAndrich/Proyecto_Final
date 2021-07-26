@@ -1,0 +1,31 @@
+/* CONOCENOS */
+
+#conocenosFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px;
+}
+
+.main__imagen--boda {
+    width: 35vw;
+    height: 60vh;
+   
+        
+}
+
+
+
+.main__imagen--cumple {
+    width: 35vw;
+    height: 60vh;
+    
+}
+
+
+.main__imagen--event {
+    display: block;
+    width: 80vw;
+    height: auto;
+    margin: 30px auto;
+}

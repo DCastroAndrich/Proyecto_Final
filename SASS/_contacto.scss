@@ -1,0 +1,30 @@
+/* CONTACTO */
+
+.portada__mainFondo--contacto {
+    background-image: url(../recursos/fondo/pexels-tejas-prajapati-586744.jpg);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-size: 100%;
+    background-position: center;
+
+}
+.formulario {
+    font-family: 'Sanchez', serif;
+    color: whitesmoke;
+    width: 50vw;
+    margin-left: 25%;
+    
+
+}
+.formulario__main{
+    padding-top: 30px;
+}
+
+.btn-dark {
+    &:hover {
+        color: whitesmoke;
+        background-color: rgba(29, 29, 29, 0.89);
+        box-shadow: 2px 2px 10px 5px gold;
+    }
+}
