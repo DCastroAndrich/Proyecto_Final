@@ -8,10 +8,12 @@
 }
 
 .contenedor__titular--home {
-    width: 80%;
-    height: 80%;
-    margin: 0 auto;
-    padding: 2%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+        
 }
 
 #portada__imagen {
