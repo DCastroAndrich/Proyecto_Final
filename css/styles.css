@@ -49,8 +49,8 @@
   color: white;
   text-align: center;
   text-shadow: 2px 2px 2px black;
-  font-size: 127px;
-  padding: 172px;
+  font-size: 9vw;
+  /* padding: 172px; */
 }
 
 .portada__titular__sec {
@@ -73,8 +73,10 @@
 .portada__texto__principal {
   color: whitesmoke;
   font-family: 'Sanchez', serif;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 2px black;
   text-align: center;
-  font-size: 13px;
+  line-height: 40px;
 }
 
 .main__titular {
@@ -129,6 +131,14 @@
 .portada__home {
   background-image: url(../recursos/fondo/pexels-camille-stae-2293507.jpg);
   height: 100vh;
+  width: 100%;
+}
+
+.contenedor__titular--home {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  padding: 2%;
 }
 
 #portada__imagen {
@@ -160,17 +170,19 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 30px;
+  width: 90vw;
+  margin: 0 auto;
+  padding: 30px;
 }
 
 .main__imagen--boda {
-  width: 35vw;
-  height: 60vh;
+  width: 50%;
+  height: auto;
 }
 
 .main__imagen--cumple {
-  width: 35vw;
-  height: 60vh;
+  width: 50%;
+  height: auto;
 }
 
 .main__imagen--event {
@@ -178,6 +190,17 @@
   width: 80vw;
   height: auto;
   margin: 30px auto;
+}
+
+.portada__contenedor__texto--conocenos {
+  margin: 0 auto;
+  width: 80vw;
+  padding: 30px;
+}
+
+.portada__lista {
+  margin: 0 auto;
+  line-height: 40px;
 }
 
 /* BODAS Y CUMPLEAÑOS */
@@ -200,7 +223,7 @@
 }
 
 .main__boda__imagen1 {
-  width: 345px;
+  width: 25vw;
   height: auto;
   border: 5px solid black;
   -webkit-transition: 2s;
@@ -208,12 +231,12 @@
 }
 
 .main__boda__imagen1:hover {
-  width: 500px;
+  width: 28vw;
   height: auto;
 }
 
 .main__boda__imagen2 {
-  width: 319px;
+  width: 25vw;
   height: auto;
   border: 5px solid black;
   -webkit-transition: all 2s;
@@ -221,12 +244,12 @@
 }
 
 .main__boda__imagen2:hover {
-  width: 500px;
+  width: 28vw;
   height: auto;
 }
 
 .main__boda__imagen3 {
-  width: 319px;
+  width: 25vw;
   height: auto;
   border: 5px solid black;
   -webkit-transition: all 2s;
@@ -234,12 +257,12 @@
 }
 
 .main__boda__imagen3:hover {
-  width: 500px;
+  width: 28vw;
   height: auto;
 }
 
 .main__boda__imagen4 {
-  width: 336px;
+  width: 25vw;
   height: auto;
   border: 5px solid black;
   -webkit-transition: all 2s;
@@ -247,7 +270,7 @@
 }
 
 .main__boda__imagen4:hover {
-  width: 500px;
+  width: 28vw;
   height: auto;
 }
 
@@ -259,8 +282,8 @@
   -webkit-column-gap: 10px;
           column-gap: 10px;
   row-gap: 10px;
-  -ms-grid-columns: 100px 600px 600px 100px;
-      grid-template-columns: 100px 600px 600px 100px;
+  -ms-grid-columns: 1fr 6fr 6fr 1fr;
+      grid-template-columns: 1fr 6fr 6fr 1fr;
       grid-template-areas: ".... imagen1 imagen2 ...." ".... imagen3 imagen3 ....";
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -271,7 +294,7 @@
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: imagen1;
-  width: 600px;
+  width: 100%;
   height: auto;
 }
 
@@ -279,7 +302,7 @@
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: imagen2;
-  width: 600px;
+  width: 100%;
   height: auto;
 }
 
@@ -288,7 +311,7 @@
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: imagen3;
-  width: 1210px;
+  width: 100%;
   height: auto;
 }
 

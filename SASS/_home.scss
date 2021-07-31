@@ -3,7 +3,15 @@
 .portada__home {
     background-image: url(../recursos/fondo/pexels-camille-stae-2293507.jpg);
     height: 100vh;
+    width: 100%;
     
+}
+
+.contenedor__titular--home {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    padding: 2%;
 }
 
 #portada__imagen {

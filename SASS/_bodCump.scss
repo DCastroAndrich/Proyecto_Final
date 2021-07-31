@@ -12,12 +12,12 @@
 
 
 .main__boda__imagen1 {
-    width: 345px;
+    width: 25vw;
     height: auto;
     border: 5px solid black;
     transition:  2s;
     &:hover {
-        width: 500px;
+        width: 28vw;
         height: auto;
     }
     
@@ -25,35 +25,35 @@
 
 
 .main__boda__imagen2 {
-    width: 319px;
+    width: 25vw;
     height: auto;
     border: 5px solid black;
     transition: all 2s;
     &:hover {
-        width: 500px;
+        width: 28vw;
         height: auto;
     }
     
 }
 
 .main__boda__imagen3 {
-    width: 319px;
+    width: 25vw;
     height: auto;
     border: 5px solid black;
     transition: all 2s;
     &:hover {
-        width: 500px;
+        width: 28vw;
         height: auto;
     }
 }
 
 .main__boda__imagen4 {
-    width: 336px;
+    width: 25vw;
     height: auto;
     border: 5px solid black;
     transition: all 2s;
     &:hover {
-        width: 500px;
+        width: 28vw;
         height: auto;
     }
 }
@@ -65,7 +65,7 @@
     display: grid;
     column-gap: 10px;
     row-gap: 10px;
-    grid-template-columns: 100px 600px 600px 100px;
+    grid-template-columns: 1fr 6fr 6fr 1fr;
     grid-template-areas: 
                 ".... imagen1 imagen2 ...."
                 ".... imagen3 imagen3 ....";
@@ -76,21 +76,21 @@
 
 .main__cumple__imagen1 {
     grid-area: imagen1;
-    width: 600px;
+    width: 100%;
     height: auto;
   
 }
 
 .main__cumple__imagen2 {
     grid-area: imagen2;
-    width: 600px;
+    width: 100%;
     height: auto;
    
 } 
 
 .main__cumple__imagen3 {
     grid-area: imagen3;
-    width: 1210px;
+    width: 100%;
     height: auto;
     
 } 
