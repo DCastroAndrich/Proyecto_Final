@@ -1,6 +1,16 @@
 /* BODAS Y CUMPLEAÑOS */
 
 
+.portada__texto__principal--block {
+    color: whitesmoke;
+    font-family: 'Sanchez', serif;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    line-height: 40px;
+    display: block;
+}
+
 #flex1 {
     width: 100vw;
     height: 50vh;
@@ -11,20 +21,7 @@
 }
 
 
-.main__boda__imagen1 {
-    width: 25vw;
-    height: auto;
-    border: 5px solid black;
-    transition:  2s;
-    &:hover {
-        width: 28vw;
-        height: auto;
-    }
-    
-}
-
-
-.main__boda__imagen2 {
+.main__boda__imagen {
     width: 25vw;
     height: auto;
     border: 5px solid black;
@@ -36,25 +33,20 @@
     
 }
 
-.main__boda__imagen3 {
-    width: 25vw;
-    height: auto;
-    border: 5px solid black;
-    transition: all 2s;
-    &:hover {
-        width: 28vw;
-        height: auto;
-    }
-}
 
-.main__boda__imagen4 {
-    width: 25vw;
+@media (max-width: 768px) { 
+    
+    #flex1 {
+    flex-direction: column;
     height: auto;
-    border: 5px solid black;
-    transition: all 2s;
-    &:hover {
-        width: 28vw;
-        height: auto;
+    }
+    .main__boda__imagen {
+        width: 70vw;
+        &:hover {
+            width: 80vw;
+            height: auto;
+        }
+
     }
 }
 
@@ -74,7 +66,7 @@
 }
 
 
-.main__cumple__imagen1 {
+.main__cumple__imagen {
     grid-area: imagen1;
     width: 100%;
     height: auto;

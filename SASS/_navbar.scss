@@ -16,6 +16,31 @@
                 font-weight: bold;
                 text-decoration: none;
                 color: whitesmoke;
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        ul {
+            li {
+                a {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .menu {
+        ul {
+            li {
+                a {
+                    font-size: 0.6rem;
+                }
             }
         }
     }

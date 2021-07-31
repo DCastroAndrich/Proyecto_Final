@@ -39,6 +39,18 @@
   color: whitesmoke;
 }
 
+@media (max-width: 768px) {
+  .menu ul li a {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .menu ul li a {
+    font-size: 0.6rem;
+  }
+}
+
 /* Header */
 .portada {
   background-image: url(../recursos/fondo/pexels-camille-stae-2293507.jpg);
@@ -204,6 +216,16 @@
 }
 
 /* BODAS Y CUMPLEAÑOS */
+.portada__texto__principal--block {
+  color: whitesmoke;
+  font-family: 'Sanchez', serif;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+  line-height: 40px;
+  display: block;
+}
+
 #flex1 {
   width: 100vw;
   height: 50vh;
@@ -222,20 +244,7 @@
           align-items: center;
 }
 
-.main__boda__imagen1 {
-  width: 25vw;
-  height: auto;
-  border: 5px solid black;
-  -webkit-transition: 2s;
-  transition: 2s;
-}
-
-.main__boda__imagen1:hover {
-  width: 28vw;
-  height: auto;
-}
-
-.main__boda__imagen2 {
+.main__boda__imagen {
   width: 25vw;
   height: auto;
   border: 5px solid black;
@@ -243,35 +252,26 @@
   transition: all 2s;
 }
 
-.main__boda__imagen2:hover {
+.main__boda__imagen:hover {
   width: 28vw;
   height: auto;
 }
 
-.main__boda__imagen3 {
-  width: 25vw;
-  height: auto;
-  border: 5px solid black;
-  -webkit-transition: all 2s;
-  transition: all 2s;
-}
-
-.main__boda__imagen3:hover {
-  width: 28vw;
-  height: auto;
-}
-
-.main__boda__imagen4 {
-  width: 25vw;
-  height: auto;
-  border: 5px solid black;
-  -webkit-transition: all 2s;
-  transition: all 2s;
-}
-
-.main__boda__imagen4:hover {
-  width: 28vw;
-  height: auto;
+@media (max-width: 768px) {
+  #flex1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .main__boda__imagen {
+    width: 70vw;
+  }
+  .main__boda__imagen:hover {
+    width: 80vw;
+    height: auto;
+  }
 }
 
 #grid2 {
@@ -290,7 +290,7 @@
           justify-content: center;
 }
 
-.main__cumple__imagen1 {
+.main__cumple__imagen {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: imagen1;
