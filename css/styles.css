@@ -233,6 +233,7 @@
   text-shadow: 2px 2px 2px black;
   text-align: center;
   line-height: 40px;
+  font-style: italic;
 }
 
 .contenedor__titular--home {
