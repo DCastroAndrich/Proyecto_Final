@@ -112,19 +112,13 @@
   line-height: 40px;
 }
 
-@media (max-width: 425px) {
-  .portada__texto__principal {
-    font-size: 0.9rem;
-    line-height: 30px;
-  }
-}
-
 .main__titular {
   font-family: 'Sanchez', serif;
   color: white;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 5px;
+  font-size: 3rem;
 }
 
 .main__texto__secundario {
@@ -135,36 +129,93 @@
   padding-bottom: 5px;
 }
 
+@media (max-width: 767px) {
+  .main__titular {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .portada__texto__principal {
+    font-size: 0.9rem;
+    line-height: 30px;
+  }
+}
+
 /* Footer */
 .pie {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#1c1c1c), color-stop(#181818), color-stop(#141414), color-stop(#0f0f0f), color-stop(#090909), color-stop(#090909), color-stop(#090909), color-stop(#090909), color-stop(#0f0f0f), color-stop(#141414), color-stop(#181818), to(#1c1c1c));
   background-image: linear-gradient(to right bottom, #1c1c1c, #181818, #141414, #0f0f0f, #090909, #090909, #090909, #090909, #0f0f0f, #141414, #181818, #1c1c1c);
-  height: 50px;
+  height: 10vh;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pie__imagenes {
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .pie__icono--face {
-  width: 40px;
-  height: auto;
-  -webkit-transform: translateX(-15px);
-          transform: translateX(-15px);
+  width: auto;
+  height: 80%;
+  padding-right: 5px;
 }
 
 .pie__icono--insta {
-  width: 40px;
-  height: auto;
+  width: auto;
+  height: 80%;
+  padding-right: 5px;
+}
+
+.copyRight {
+  color: whitesmoke;
+  font-family: 'Sanchez', serif;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 425px) {
+  .pie__icono--face, .pie__icono--insta {
+    width: auto;
+    height: 60%;
+    padding-right: 2px;
+  }
+}
+
+@media (max-width: 765px) {
+  .copyRight {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .copyRight {
+    font-size: 0.5rem;
+  }
 }
 
 /* HOME */
@@ -172,6 +223,16 @@
   background-image: url(../recursos/fondo/pexels-camille-stae-2293507.jpg);
   height: 100vh;
   width: 100%;
+}
+
+.portada__slogan {
+  padding-top: 10px;
+  color: whitesmoke;
+  font-family: 'Sanchez', serif;
+  font-size: 3rem;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+  line-height: 40px;
 }
 
 .contenedor__titular--home {
@@ -205,6 +266,12 @@
   margin: 30px auto;
   width: 80vw;
   height: auto;
+}
+
+@media (max-width: 767px) {
+  .portada__slogan {
+    font-size: 1.8rem;
+  }
 }
 
 /* CONOCENOS */

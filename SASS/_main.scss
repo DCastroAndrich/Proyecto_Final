@@ -14,12 +14,6 @@
     line-height: 40px;
 }
 
-@media (max-width: 425px) {
-    .portada__texto__principal {
-        font-size: 0.9rem;
-        line-height: 30px;
-    }
-}
 
 
 .main__titular {
@@ -28,9 +22,8 @@
     text-align: center;
     padding-top: 30px;
     padding-bottom: 5px;
+    font-size: 3rem;
 }
-
-
 .main__texto__secundario {
     color: whitesmoke;
     font-family: 'Sanchez', serif;
@@ -38,3 +31,18 @@
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+
+@media (max-width: 767px) {
+    .main__titular {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .portada__texto__principal {
+        font-size: 0.9rem;
+        line-height: 30px;
+    }
+}
+

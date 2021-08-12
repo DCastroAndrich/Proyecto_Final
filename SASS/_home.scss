@@ -7,25 +7,44 @@
     
 }
 
+.portada__slogan {
+    padding-top: 10px;
+    color: whitesmoke;
+    font-family: 'Sanchez', serif;
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+
+
 .contenedor__titular--home {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-        
+    
 }
 
 #portada__imagen {
     display: flex;
     flex-direction: column;
     padding: 30px 30px;
-
+    
 }
- 
+
 .portada__imagen--img {
     margin: 30px auto;
     width: 80vw;
     height: auto;
     
 } 
+
+@media (max-width: 767px) {
+    .portada__slogan {
+        font-size: 1.8rem;
+    }
+}
