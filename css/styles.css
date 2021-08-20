@@ -4,9 +4,9 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  list-style-type: none;
 }
 
+/* Variables */
 /* Navbar */
 .menu {
   position: -webkit-sticky;
@@ -17,8 +17,8 @@
 }
 
 .menu ul {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#1c1c1c), color-stop(#181818), color-stop(#141414), color-stop(#0f0f0f), color-stop(#090909), color-stop(#090909), color-stop(#090909), color-stop(#090909), color-stop(#0f0f0f), color-stop(#141414), color-stop(#181818), to(#1c1c1c));
-  background-image: linear-gradient(to right bottom, #1c1c1c, #181818, #141414, #0f0f0f, #090909, #090909, #090909, #090909, #0f0f0f, #141414, #181818, #1c1c1c);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#1c1c1c), color-stop(#181818), color-stop(#141414), color-stop(#0f0f0f), color-stop(#090909), color-stop(#0f0f0f), color-stop(#141414), color-stop(#181818), to(#1c1c1c));
+  background-image: linear-gradient(to right bottom, #1c1c1c, #181818, #141414, #0f0f0f, #090909, #0f0f0f, #141414, #181818, #1c1c1c);
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,6 +30,11 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.menu ul li {
+  padding-top: 2px;
 }
 
 .menu ul li a {
@@ -39,7 +44,11 @@
   color: whitesmoke;
 }
 
-@media (max-width: 768px) {
+.menu ul li a:hover {
+  color: gold;
+}
+
+@media (max-width: 767px) {
   .menu ul {
     padding-top: 5px;
   }
@@ -54,6 +63,15 @@
   }
   .menu ul li a {
     font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .menu ul {
+    padding-top: 5px;
+  }
+  .menu ul li a {
+    font-size: 0.5rem;
   }
 }
 
@@ -83,7 +101,7 @@
   color: white;
   text-align: center;
   text-shadow: 2px 2px 2px black;
-  font-size: 9vw;
+  font-size: 8vw;
 }
 
 .portada__titular__sec {
@@ -92,7 +110,7 @@
   text-align: center;
   text-shadow: 2px 2px 2px black;
   color: white;
-  font-size: 9vw;
+  font-size: 6.5vw;
   padding-bottom: 30px;
   margin-bottom: 0;
 }
@@ -100,7 +118,14 @@
 /* Main */
 .portada__mainFondo {
   background-image: url(../recursos/fondo/dark-honeycomb.png);
+  background-attachment: fixed;
   padding-bottom: 20px;
+}
+
+.portada__contenedor__texto {
+  margin: 0 auto;
+  width: 70vw;
+  padding: 30px;
 }
 
 .portada__texto__principal {
@@ -108,7 +133,7 @@
   font-family: 'Sanchez', serif;
   font-size: 1.2rem;
   text-shadow: 2px 2px 2px black;
-  text-align: center;
+  text-align: justify;
   line-height: 40px;
 }
 
@@ -127,25 +152,26 @@
   text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 767px) {
   .main__titular {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 }
 
 @media (max-width: 425px) {
   .portada__texto__principal {
-    font-size: 0.9rem;
-    line-height: 30px;
+    font-size: 0.7rem;
+    line-height: 20px;
   }
 }
 
 /* Footer */
 .pie {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#1c1c1c), color-stop(#181818), color-stop(#141414), color-stop(#0f0f0f), color-stop(#090909), color-stop(#090909), color-stop(#090909), color-stop(#090909), color-stop(#0f0f0f), color-stop(#141414), color-stop(#181818), to(#1c1c1c));
-  background-image: linear-gradient(to right bottom, #1c1c1c, #181818, #141414, #0f0f0f, #090909, #090909, #090909, #090909, #0f0f0f, #141414, #181818, #1c1c1c);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#1c1c1c), color-stop(#181818), color-stop(#141414), color-stop(#0f0f0f), color-stop(#090909), color-stop(#0f0f0f), color-stop(#141414), color-stop(#181818), to(#1c1c1c));
+  background-image: linear-gradient(to right bottom, #1c1c1c, #181818, #141414, #0f0f0f, #090909, #0f0f0f, #141414, #181818, #1c1c1c);
   height: 10vh;
   width: 100%;
   display: -webkit-box;
@@ -198,21 +224,18 @@
   font-size: 0.9rem;
 }
 
+@media (max-width: 767px) {
+  .copyRight {
+    font-size: 0.6rem;
+  }
+}
+
 @media (max-width: 425px) {
   .pie__icono--face, .pie__icono--insta {
     width: auto;
     height: 60%;
     padding-right: 2px;
   }
-}
-
-@media (max-width: 765px) {
-  .copyRight {
-    font-size: 0.6rem;
-  }
-}
-
-@media (max-width: 450px) {
   .copyRight {
     font-size: 0.5rem;
   }
@@ -226,13 +249,12 @@
 }
 
 .portada__slogan {
-  padding-top: 10px;
+  padding-top: 50px;
   color: whitesmoke;
   font-family: 'Sanchez', serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-shadow: 2px 2px 2px black;
   text-align: center;
-  line-height: 40px;
   font-style: italic;
 }
 
@@ -267,6 +289,8 @@
   margin: 30px auto;
   width: 80vw;
   height: auto;
+  -webkit-box-shadow: 10px 7px 20px 0px black;
+          box-shadow: 10px 7px 20px 0px black;
 }
 
 @media (max-width: 767px) {
@@ -284,22 +308,19 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 90vw;
   margin: 0 auto;
   padding: 30px;
 }
 
-.main__imagen--boda {
-  width: 50%;
+.main__imagen {
+  width: 49%;
   height: auto;
-}
-
-.main__imagen--cumple {
-  width: 50%;
-  height: auto;
+  -webkit-box-shadow: 10px 7px 20px 0px black;
+          box-shadow: 10px 7px 20px 0px black;
 }
 
 .main__imagen--event {
@@ -307,30 +328,29 @@
   width: 80vw;
   height: auto;
   margin: 30px auto;
+  -webkit-box-shadow: 10px 7px 20px 0px black;
+          box-shadow: 10px 7px 20px 0px black;
 }
 
-.portada__contenedor__texto--conocenos {
-  margin: 0 auto;
-  width: 80vw;
-  padding: 30px;
-}
-
-.portada__lista {
-  margin: 0 auto;
-  line-height: 40px;
-}
-
-/* BODAS Y CUMPLEAÑOS */
-.portada__texto__principal--block {
+.portada__lista--texto {
+  padding-left: 50px;
   color: whitesmoke;
   font-family: 'Sanchez', serif;
   font-size: 1.2rem;
   text-shadow: 2px 2px 2px black;
-  text-align: center;
-  line-height: 40px;
-  display: block;
+  text-align: justify;
+  line-height: 50px;
 }
 
+@media (max-width: 425px) {
+  .portada__lista--texto {
+    font-size: 0.7rem;
+    line-height: 20px;
+    padding-left: 30px;
+  }
+}
+
+/* BODAS Y CUMPLEAÑOS */
 #flex1 {
   width: 100vw;
   height: 50vh;
@@ -362,23 +382,6 @@
   height: auto;
 }
 
-@media (max-width: 768px) {
-  #flex1 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: auto;
-  }
-  .main__boda__imagen {
-    width: 70vw;
-  }
-  .main__boda__imagen:hover {
-    width: 80vw;
-    height: auto;
-  }
-}
-
 #grid2 {
   width: 100vw;
   padding-top: 20px;
@@ -401,6 +404,8 @@
   grid-area: imagen1;
   width: 100%;
   height: auto;
+  -webkit-box-shadow: 10px 7px 20px 0px black;
+          box-shadow: 10px 7px 20px 0px black;
 }
 
 .main__cumple__imagen2 {
@@ -409,6 +414,8 @@
   grid-area: imagen2;
   width: 100%;
   height: auto;
+  -webkit-box-shadow: 10px 7px 20px 0px black;
+          box-shadow: 10px 7px 20px 0px black;
 }
 
 .main__cumple__imagen3 {
@@ -418,6 +425,25 @@
   grid-area: imagen3;
   width: 100%;
   height: auto;
+  -webkit-box-shadow: 10px 7px 20px 0px black;
+          box-shadow: 10px 7px 20px 0px black;
+}
+
+@media (max-width: 767px) {
+  #flex1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .main__boda__imagen {
+    width: 70vw;
+  }
+  .main__boda__imagen:hover {
+    width: 80vw;
+    height: auto;
+  }
 }
 
 /* EVENTOS */
@@ -445,6 +471,8 @@
   height: auto;
   overflow: hidden;
   position: relative;
+  -webkit-box-shadow: 10px 7px 20px 0px black;
+          box-shadow: 10px 7px 20px 0px black;
 }
 
 .eventosFlex__cont:hover img {
@@ -479,6 +507,8 @@
   height: 100%;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+  -webkit-box-shadow: 10px 7px 20px 0px black;
+          box-shadow: 10px 7px 20px 0px black;
 }
 
 .eventosFlex__textos {
@@ -515,16 +545,16 @@
   font-size: 2rem;
 }
 
-@media (max-width: 425px) {
-  .eventosFlex__titulo {
-    font-size: 1rem;
-  }
-}
-
 .eventosFlex__cont:hover .eventosFlex__titulo {
   bottom: 0;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+@media (max-width: 425px) {
+  .eventosFlex__titulo {
+    font-size: 1rem;
+  }
 }
 
 /* CONTACTO */
@@ -532,16 +562,29 @@
   background-image: url(../recursos/fondo/pexels-tejas-prajapati-586744.jpg);
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 100%;
   background-size: 100%;
-  background-position: center;
+  background-position: top;
+  background-attachment: fixed;
 }
 
 .formulario {
   font-family: 'Sanchez', serif;
+  font-weight: 400;
   color: whitesmoke;
+  text-shadow: black 2px 2px 2px;
   width: 50vw;
   margin-left: 25%;
+  padding-bottom: 50px;
+}
+
+.portada__texto__principal--cont {
+  color: whitesmoke;
+  font-family: 'Sanchez', serif;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+  line-height: 40px;
 }
 
 .formulario__main {
@@ -553,5 +596,12 @@
   background-color: rgba(29, 29, 29, 0.89);
   -webkit-box-shadow: 2px 2px 10px 5px gold;
           box-shadow: 2px 2px 10px 5px gold;
+}
+
+@media (max-width: 425px) {
+  .portada__texto__principal--cont {
+    font-size: 0.7rem;
+    line-height: 20px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

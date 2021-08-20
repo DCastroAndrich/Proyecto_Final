@@ -1,16 +1,24 @@
 /* Main */
 .portada__mainFondo {
     background-image: url(../recursos/fondo/dark-honeycomb.png);
+    background-attachment: fixed;
     padding-bottom: 20px;
 }
 
 
+.portada__contenedor__texto {
+    margin: 0 auto;
+    width: 70vw;
+    padding: 30px;  
+}
+
+
 .portada__texto__principal {
-    color: whitesmoke;
+    color: $whiteSmoke;
     font-family: 'Sanchez', serif;
     font-size: 1.2rem;
     text-shadow: 2px 2px 2px black;
-    text-align: center;
+    text-align: justify;
     line-height: 40px;
 }
 
@@ -30,19 +38,22 @@
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
+    margin-bottom: 30px;
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: $tablet) {
     .main__titular {
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: $mob-l) {
     .portada__texto__principal {
-        font-size: 0.9rem;
-        line-height: 30px;
+        font-size: 0.7rem;
+        line-height: 20px;
     }
 }
+
+
 

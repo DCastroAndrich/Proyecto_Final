@@ -18,6 +18,7 @@
     height: auto;
     overflow: hidden;
     position: relative;
+    box-shadow: $box-shadow;
     &:hover {
         img {
             filter: blur(2px) grayscale(1);
@@ -45,13 +46,15 @@
     width: 100%;
     height: 100%;
     transition: all 0.4s;
+    box-shadow: $box-shadow;
+    
 }
 
 
 .eventosFlex__textos {
     display: flex;
     flex-direction: column;
-    color: whitesmoke;
+    color: $whiteSmoke;
     text-shadow: 2px 2px 2px black;
     font-family: 'Sanchez', serif;
     justify-content: center;
@@ -75,16 +78,16 @@
     font-size: 2rem;
 }
 
-@media (max-width: 425px) {
-    .eventosFlex__titulo {
-        font-size: 1rem;
-    }
-}
-
-
 .eventosFlex__cont {
     &:hover .eventosFlex__titulo {
         bottom: 0;
         transition: all 0.5s;
     }
 }
+
+@media (max-width: $mob-l) {
+    .eventosFlex__titulo {
+        font-size: 1rem;
+    }
+}
+

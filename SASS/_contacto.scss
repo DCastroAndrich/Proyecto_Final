@@ -1,30 +1,56 @@
 /* CONTACTO */
 
+
 .portada__mainFondo--contacto {
     background-image: url(../recursos/fondo/pexels-tejas-prajapati-586744.jpg);
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     background-size: 100%;
-    background-position: center;
+    background-position: top;
+    background-attachment: fixed;
 
 }
 .formulario {
     font-family: 'Sanchez', serif;
-    color: whitesmoke;
+    font-weight: 400;
+    color: $whiteSmoke;
+    text-shadow: black 2px 2px 2px;
     width: 50vw;
     margin-left: 25%;
+    padding-bottom: 50px;
     
 
 }
+
+
+.portada__texto__principal--cont {
+    color: $whiteSmoke;
+    font-family: 'Sanchez', serif;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+
+
 .formulario__main{
     padding-top: 30px;
 }
 
 .btn-dark {
     &:hover {
-        color: whitesmoke;
+        color: $whiteSmoke;
         background-color: rgba(29, 29, 29, 0.89);
         box-shadow: 2px 2px 10px 5px gold;
+    }
+}
+
+@media (max-width: $mob-l) {
+    .portada__texto__principal--cont {
+        font-size: 0.7rem;
+        line-height: 20px;
     }
 }

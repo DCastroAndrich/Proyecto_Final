@@ -1,6 +1,6 @@
 /* Footer */
 .pie {
-    background-image: linear-gradient(to right bottom, #1c1c1c, #181818, #141414, #0f0f0f, #090909, #090909, #090909, #090909, #0f0f0f, #141414, #181818, #1c1c1c);
+    background-image: $bg-barra;
     height: 10vh;
     width: 100%;
     display: flex;
@@ -34,27 +34,26 @@
 }
 
 .copyRight {
-    color: whitesmoke;
+    color: $whiteSmoke;
     font-family: 'Sanchez', serif;
     font-size: 0.9rem;
 }
 
-@media (max-width: 425px) {
-    .pie__icono--face, .pie__icono--insta {
-        width: auto;
-        height: 60%;
-        padding-right: 2px;
-    }
-}
-
-
-@media (max-width: 765px) {
+@media (max-width: $tablet) {
     .copyRight {
         font-size: 0.6rem;
         
     }
 }
-@media (max-width: 450px) {
+
+
+@media (max-width: $mob-l) {
+    .pie__icono--face, .pie__icono--insta {
+        width: auto;
+        height: 60%;
+        padding-right: 2px;
+    }
+
     .copyRight {
         font-size: 0.5rem;
         
